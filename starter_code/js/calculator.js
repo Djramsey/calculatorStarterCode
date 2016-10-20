@@ -28,13 +28,14 @@ $(document).ready(function()
 
 	function isOneOperandOperator(n) 
 	{
-  		return n == "SQRT" || n == "log";
+  		return n == "SQRT" || n == "log" || n == "factorial";
 	}
 
 	function isTwoOperandOperator(n) 
 	{
   		return n == "/" || n == "x" || n == "-" || n == "+" || n == "^";
 	}
+
 
 	// Simple FSM
 	$('.calc-btn').click(function() 
